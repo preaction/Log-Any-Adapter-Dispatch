@@ -13,6 +13,7 @@ sub init {
 
     # If a dispatcher was not explicitly passed in, create a new one with the passed arguments.
     #
+    $_[-2] eq "category" and splice @_, -2, 2;
     $self->{dispatcher} ||= Log::Dispatch->new(@_);
 }
 
