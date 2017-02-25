@@ -1,11 +1,12 @@
 package Log::Any::Adapter::Dispatch;
+# ABSTRACT: Adapter to use Log::Dispatch with Log::Any
+our $VERSION = '0.07';
+
 use Log::Any::Adapter::Util qw(make_method);
 use Log::Dispatch;
 use strict;
 use warnings;
 use base qw(Log::Any::Adapter::Base);
-
-our $VERSION = '0.06';
 
 sub init {
     my $self = shift;
@@ -40,10 +41,6 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Log::Any::Adapter::Dispatch
-
 =head1 SYNOPSIS
 
     use Log::Any::Adapter;
@@ -66,16 +63,5 @@ I<dispatcher> parameter.
 
 L<Log::Any::Adapter|Log::Any::Adapter>, L<Log::Any|Log::Any>,
 L<Log::Dispatch|Log::Dispatch>
-
-=head1 AUTHOR
-
-Jonathan Swartz
-
-=head1 COPYRIGHT & LICENSE
-
-Copyright (C) 2007 Jonathan Swartz, all rights reserved.
-
-This program is free software; you can redistribute it and/or modify it under
-the same terms as Perl itself.
 
 =cut

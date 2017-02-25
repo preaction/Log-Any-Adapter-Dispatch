@@ -1,0 +1,46 @@
+# NAME
+
+Log::Any::Adapter::Dispatch - Adapter to use Log::Dispatch with Log::Any
+
+# VERSION
+
+version 0.06
+
+# STATUS
+
+<a href="https://travis-ci.org/preaction/Log-Any-Adapter-Dispatch"><img src="https://travis-ci.org/preaction/Log-Any-Adapter-Dispatch.svg?branch=master"></a><a href="https://coveralls.io/r/preaction/Log-Any-Adapter-Dispatch"><img src="https://coveralls.io/repos/preaction/Log-Any-Adapter-Dispatch/badge.png" alt="Coverage Status" /></a>
+
+# SYNOPSIS
+
+    use Log::Any::Adapter;
+
+    Log::Any::Adapter->set('Dispatch', outputs => [[ ... ]]);
+
+    my $dispatcher = Log::Dispatch->new( ... );
+    Log::Any::Adapter->set('Dispatch', dispatcher => $dispatcher);
+
+# DESCRIPTION
+
+This [Log::Any](https://metacpan.org/pod/Log::Any) adapter uses [Log::Dispatch](https://metacpan.org/pod/Log::Dispatch) for
+logging.
+
+You may either pass parameters (like _outputs_) to be passed to
+`Log::Dispatch->new`, or pass a `Log::Dispatch` object directly in the
+_dispatcher_ parameter.
+
+# SEE ALSO
+
+[Log::Any::Adapter](https://metacpan.org/pod/Log::Any::Adapter), [Log::Any](https://metacpan.org/pod/Log::Any),
+[Log::Dispatch](https://metacpan.org/pod/Log::Dispatch)
+
+# AUTHORS
+
+- Jonathan Swartz <swartz@pobox.com>
+- Doug Bell <preaction@cpan.org>
+
+# COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2017 by Jonathan Swartz and Doug Bell.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
