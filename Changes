@@ -1,6 +1,17 @@
 Revision history for Log-Any-Adapter-Dispatch
 
-** denotes an incompatible change
+{{ $NEXT }}
+
+    [Fixed]
+
+    - Fixed incompatibility between this module and Log-Dispatch v2.60.
+      Log-Dispatch has become more strict about what parameters it
+      accepts, and we've been always sending it some invalid ones.
+
+      Thanks to @pghmcfc for the report and @rehsack for the patch!
+
+      https://github.com/jonswar/perl-log-any-adapter-dispatch/issues/1
+      https://rt.cpan.org/Ticket/Display.html?id=120323&results=f2d27ced83757746149de26b27b5b85c
 
 0.06  Feb 13, 2010
 
