@@ -4,7 +4,7 @@ Log::Any::Adapter::Dispatch - Adapter to use Log::Dispatch with Log::Any
 
 # VERSION
 
-version 0.07
+version 0.08
 
 # STATUS
 
@@ -37,6 +37,10 @@ _dispatcher_ parameter.
 
 - Jonathan Swartz <swartz@pobox.com>
 - Doug Bell <preaction@cpan.org>
+
+# CONTRIBUTOR
+
+Jens Rehsack <sno@netbsd.org>
 
 # COPYRIGHT AND LICENSE
 
