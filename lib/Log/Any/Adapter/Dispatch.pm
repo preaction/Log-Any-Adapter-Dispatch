@@ -1,6 +1,6 @@
 package Log::Any::Adapter::Dispatch;
 # ABSTRACT: Adapter to use Log::Dispatch with Log::Any
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 use Log::Any::Adapter::Util qw(make_method);
 use Log::Dispatch;
